@@ -1,23 +1,4 @@
-/* Regras Codificador: 
-"e" é convertido para "enter" 
-"i" é convertido para "imes"
-"a" é convertido para "ai"
-"o" é convertido para "ober"
-"u" é convertido para "ufat"
-Apenas letras minúsculas
-Não permite acentuação
-Não permite números   
-*/
 
-/* Regras Decodificador: 
-<p>"enter" é convertido para "e"</p> 
-<p>"imes" é convertido para "i"</p> 
-<p>"ai" é convertido para "a"</p> 
-<p>"ober" é convertido para "o"</p> 
-<p>"ufat" é convertido para "u"</p> 
-<p>Apenas letras minúsculas</p> 
-<p>Não permite acentuação</p>   
-*/
 let textoDigitado = document.querySelector("#input-texto");
 let criptografar = document.querySelector("#btn-cripto");
 let decriptografar = document.querySelector("#btn-descripto");
@@ -34,7 +15,7 @@ function criptarTexto(event) {
   let texto = textoDigitado.value;
 
   /*
-    ...E aqui na condição do IF
+  
     Se digitar alguma palavra com acento, maiúscula ou número
     a condição vai barrar e exibirá um alerta
     Caso contrário seguirá decriptando a frase
