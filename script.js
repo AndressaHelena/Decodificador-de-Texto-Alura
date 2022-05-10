@@ -1,23 +1,4 @@
-/* Regras Codificador: 
-"e" é convertido para "enter" 
-"i" é convertido para "imes"
-"a" é convertido para "ai"
-"o" é convertido para "ober"
-"u" é convertido para "ufat"
-Apenas letras minúsculas
-Não permite acentuação
-Não permite números   
-*/
 
-/* Regras Decodificador: 
-<p>"enter" é convertido para "e"</p> 
-<p>"imes" é convertido para "i"</p> 
-<p>"ai" é convertido para "a"</p> 
-<p>"ober" é convertido para "o"</p> 
-<p>"ufat" é convertido para "u"</p> 
-<p>Apenas letras minúsculas</p> 
-<p>Não permite acentuação</p>   
-*/
 let textoDigitado = document.querySelector("#input-texto");
 let criptografar = document.querySelector("#btn-cripto");
 let decriptografar = document.querySelector("#btn-descripto");
@@ -27,21 +8,15 @@ let decriptoResultado = document.querySelector("#mensagem");
 let buttonLimpar = document.querySelector("#limpar");
 
 
-// Expressão regular que checa os caracteres de a-z e espaços em brancos até o fim da frase
+
 const regex = /^[a-z\s]+$/; 
 
 function criptarTexto(event) {
   let texto = textoDigitado.value;
 
-  /*
-    ...E aqui na condição do IF
-    Se digitar alguma palavra com acento, maiúscula ou número
-    a condição vai barrar e exibirá um alerta
-    Caso contrário seguirá decriptando a frase
-  */
+  
   if (regex.test(texto) == true){
 
-    
     let criptar1 = texto.replaceAll("e", "enter");
     let criptar2 = criptar1.replaceAll("i", "imes");
     let criptar3 = criptar2.replaceAll("a", "ai");
@@ -62,10 +37,7 @@ function criptarTexto(event) {
 function decriptarTexto(event) {
   let texto = textoDigitado.value;
 
-  /*
-  Antes essa condição estava passando palavras maiúsculas
-  Agora com a correção tem o mesmo comportamento da outra condição
-  */
+  
   if (regex.test(texto) == true){
 
     let decriptar1 = texto.replaceAll("enter", "e");
@@ -79,7 +51,7 @@ function decriptarTexto(event) {
 
   } else {
     
-    // Pode personalizar essa frase de alerta também
+   
     alert("Digite uma frase válida, sem acentos ou palavras maiúsculas");
 
   }
