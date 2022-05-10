@@ -158,6 +158,7 @@ textarea {
 
 .alerta {
   padding-left: 2rem;
+  font-size: 1.6rem;
 }
 
 #btn-cripto,
@@ -252,10 +253,15 @@ textarea {
   color: var(--menu-color);
   font-variant: small-caps;
 }
+
+footer p{
+  font-size: 1.6rem;
+}
 @media(max-width: 500px){
   div.cards{
     
-    
+   margin-bottom: 20px;
+  justify-content: center;
     flex-direction: column;
    
   }
