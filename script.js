@@ -56,14 +56,16 @@ function descriptarTexto(event) {
 
 }
 
-function limparTexto() {
+function limparTexto(event) {
   document.getElementById("input-texto").value = ""
   document.getElementById("mensagem").value = ""
+  event.preventDefault();
 }
 
-function copiarTexto() {
+function copiarTexto(event) {
   let copy = mensagem;
   navigator.clipboard.writeText(copy.value);
+  event.preventDefault();
 }
 
 criptografar.onclick = criptarTexto;
