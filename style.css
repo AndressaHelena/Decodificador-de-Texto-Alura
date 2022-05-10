@@ -34,27 +34,34 @@ body {
 }
 
 
-form .alura {
+ .alura {
 
   width: auto;
   height: auto;
-  padding-left: 30px;
-
-
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  
+}
+div.alura{
+  border-bottom:#6C747A solid 1px;
+  width:95%;
+  margin-inline: auto;
 }
 
 .main {
   
-  max-width: 96rem;
-  margin: auto;
+  max-width: 100%;
+  margin-left: 5rem;
+  margin-right: 5rem;
   display: flex;
   justify-content: center;
+  height: 450px;
 
 }
 
 .header,
 .header-sobre {
-  max-width: 96rem;
+  max-width: 100%;
   height: 5rem;
   
   background-color: var(--blue-color);
@@ -62,7 +69,7 @@ form .alura {
   justify-content: space-between;
   flex-wrap: wrap;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
  
 
 }
@@ -104,17 +111,23 @@ form .alura {
 
 .return {
   padding: 10px;
-  margin: 0;
-
+  margin: auto;
+  
   border-radius: 32px;
-  width: 400px;
+  width: 40rem;
   height: 500px;
 }
-
+.btns{
+  margin-inline: 3rem;
+  width: 34rem;
+  padding-top: 10px;
+  
+}
 .form {
   border: transparent solid 1px;
   max-width: 96rem;
   font-style: italic;
+  margin-right: 20rem;
 }
 
 textarea {
@@ -125,12 +138,13 @@ textarea {
 
   width: 90%;
   max-width: 98rem;
-  height: 400px;
+  height: 34rem;
   font-size: 25px;
   border-radius: 24px;
   border: none;
   display: block;
-  padding: 0.5em;
+  margin: auto;  
+  
   background-color: white;
 
   box-shadow: 0 0 20px var(--menu-color);
@@ -141,14 +155,13 @@ textarea {
   border-radius: 0.5em;
   border: 1px #D8DFE8;
   display: block;
-  padding: 0.5em;
-  width: 90%;
+ width: 90%;
   max-width: 98rem;
   height: 34rem;
   font-size: 2.5rem;
   font-family: inherit;
   background: transparent;
-  margin: auto;
+ 
 }
 
 #mensagem:focus,
@@ -159,6 +172,7 @@ textarea {
 .alerta {
   padding-left: 2rem;
   font-size: 1.6rem;
+  margin-bottom: 15px;
 }
 
 #btn-cripto,
@@ -175,7 +189,7 @@ textarea {
   display: inline-block;
   font-size: 1.8rem;
   text-align: center;
-  margin-inline: 1rem;
+  margin-inline: 0.5rem;
 
 }
 
@@ -193,12 +207,14 @@ textarea {
   font-weight: bold;
   background-color: var(--primary-color);
   padding: 10px;
-  margin-top: 10px;
   border-radius: 15px;
-  width: 20rem;
+  width: 15rem;
   height: 50px;
   font-size: 1.6rem;
   border: 1px solid var(--font-color);
+  margin-right: 1rem;
+  
+
 }
 
 
@@ -209,10 +225,7 @@ textarea {
 }
 
 
-#limpar {
-  width: 15rem;
-  margin-inline: 10px;
-}
+
 
 .rodape-texto {
   color: #0A3871;
@@ -231,7 +244,6 @@ textarea {
 .cards {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
   
 
 }
@@ -239,8 +251,10 @@ textarea {
 .card1,
 .card2 {
   background-color: white;
-  padding: 20px;
+  padding: 15px;
   margin-inline: 10px;
+  font-size: 3rem;
+
   text-align: center;
   border-radius: 15px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
@@ -257,12 +271,12 @@ textarea {
 footer p{
   font-size: 1.6rem;
 }
-@media(max-width: 500px){
+@media(max-width:700px){
   div.cards{
-    
+   width: 400px; 
    margin-bottom: 20px;
-  justify-content: center;
-    flex-direction: column;
+   justify-content: center;
+   flex-direction: column; 
    
   }
 }

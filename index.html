@@ -24,11 +24,14 @@
   </nav>
   </header>
 
-    <main class="main">
+  <div class="alura">
+    <img nome="alura" class="alura" id="alura" src="img/alura.png" alt="">
+  </div>
+  
+  <main class="main">
       <section class="form">
         <form action="">
-          <img nome="alura" class="alura" id="alura" src="img/alura.png" alt="">
-          
+        
           <div>
             <textarea class="text-input" type="text" name="input-texto" id="input-texto"placeholder="insira o texto aqui"></textarea>
             <label class="alerta" for="input-texto">Apenas letras minúsculas, sem acento.</label>
@@ -37,14 +40,16 @@
           <div id="button">
             <input class="btn" type="submit" value="Criptografar!" id="btn-cripto">
             <input class="btn" type="submit" value="Descriptografar!" id="btn-descripto">
-            <button class="limpar" type="submit" id="limpar">Limpar</button>
         </div>
         </form>
       </section>
     
       <section class="return">
         <textarea class="msg" type="text" id="mensagem" readonly></textarea>
-        <input class="btn" type="submit" value="Copiar" id="btn-copy">
+        <div class="btns">
+          <input class="btn" type="submit" value="Copiar" id="btn-copy">
+          <button class="limpar" type="submit" id="limpar">Limpar</button>
+      </div>
       </section>
       
     </main>
