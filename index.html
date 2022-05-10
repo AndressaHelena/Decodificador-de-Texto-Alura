@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="img/cadeado.png">
+    <script src="https://kit.fontawesome.com/5acba91aeb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Decodificador de Texto</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="inicio">
+      <a href="#">Início</a>
+    </div>
+  <nav>
+    <ul class="menu">
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+  </header>
+
+    <main class="main">
+      <section class="form">
+        <form action="">
+          <img nome="alura" class="alura" id="alura" src="img/alura.png" alt="">
+          
+          <div>
+            <textarea class="text-input" type="text" name="input-texto" id="input-texto"placeholder="insira o texto aqui"></textarea>
+            <label class="alerta" for="input-texto">Apenas letras minúsculas, sem acento.</label>
+          </div>
+
+          <div id="button">
+            <input class="btn" type="submit" value="criptografar!" id="btn-cripto">
+            <input class="btn" type="submit" value="descriptografar!" id="btn-descripto">
+            <button class="limpar" type="submit" id="limpar">limpar</button>
+        </div>
+        </form>
+      </section>
+    
+      <section class="return">
+        <textarea class="msg" type="text" id="mensagem" readonly onclick="mostra"></textarea>
+        <input class="btn" type="submit" value="copiar" id="btn-copy">
+      </section>
+      
+    </main>
+
+    <footer>
+      <div class="rodape-texto">
+        <p><i>Desenvolvido por Andressa Helena</i></p>
+      </div>
+      <div class="rodape-ancora">
+        <a target="_blank" href="https://www.linkedin.com/in/andressa-helena/"><i class="fa-brands fa-linkedin  fa-xl"></i></a>
+        <a target="_blank" href="https://github.com/AndressaHelena"><i class="fa-brands fa-github  fa-xl"></i></a>
+      </div>
+    </footer>
+ 
+  
+    <script src="script.js"></script> 
+</body>
+</html>
