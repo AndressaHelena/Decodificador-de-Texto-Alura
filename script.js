@@ -62,8 +62,8 @@ function limparTexto() {
 }
 
 function copiarTexto() {
-  let copiar = mensagem;
-  navigator.clipboard.writeText(copiar.value);
+  let copy = mensagem;
+  navigator.clipboard.writeText(copy.value);
 }
 
 criptografar.onclick = criptarTexto;
