@@ -71,7 +71,14 @@ div.alura {
   display: flex;
   margin: 6px;
 
-
+}
+.links{
+  text-decoration: none;
+  list-style: none;
+  color: var(--primary-color);
+  display: flex;
+  margin-top: 20px;
+ 
 }
 
 
