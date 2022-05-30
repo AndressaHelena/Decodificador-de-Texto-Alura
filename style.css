@@ -238,12 +238,17 @@ footer p{
             MEDIA QUERY
 **********************************/
 @media(max-width:700px){
-  div.cards{
-    width: 400px; 
-    margin-bottom: 20px;
-    justify-content: center;
-    flex-direction: column; 
+ @media(max-width:560px){
+  .cards{
+   flex-direction: column; 
+    margin: 20px;
   }
+   
+  .card1,
+  .card2 {
+    margin: 10px;
+}
+
 
   .return {
     margin-top: 45px;
