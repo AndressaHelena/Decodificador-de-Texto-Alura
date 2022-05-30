@@ -234,16 +234,14 @@ textarea {
   padding: 20px 0px;
 }
 
-.rodape-ancora {
-  text-align: center;
-  height: 4rem;
-  padding: 10px 0px;
-}
+
+
 
 /*-------sobre----------*/
 .cards {
   display: flex;
   justify-content: center;
+  
   
 
 }
@@ -271,14 +269,19 @@ textarea {
 footer p{
   font-size: 1.6rem;
 }
-@media(max-width:700px){
-  div.cards{
-   width: 400px; 
-   margin-bottom: 20px;
-   justify-content: center;
-   flex-direction: column; 
+@media(max-width:560px){
+  .cards{
    
+   flex-direction: column; 
+   margin: 20px;
   }
+  .card1,
+  .card2 {
+margin: 10px;
+}
+.rodape-texto p{
+  font-size: 3rem;
+}
 }
 
 
