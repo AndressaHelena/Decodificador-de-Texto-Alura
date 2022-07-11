@@ -7,6 +7,9 @@
   font-size: 62.5%;
   /*Regra de 3 (10*100%)/16=62,5% para transformar 16px em 10px 1rem=10px (acessibilidade)*/
 }
+html{
+  overflow: hidden;
+}
 
 body {
   --primary-color: #DDEDFB;
