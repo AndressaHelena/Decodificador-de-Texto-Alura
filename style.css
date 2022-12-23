@@ -29,6 +29,7 @@ body {
 .header-sobre {
   max-width: 100%;
   height: 5rem;
+  padding: 0 30px;
   background-color: var(--blue-color);
   display: flex;
   justify-content: space-between;
@@ -81,11 +82,13 @@ div.alura {
 
 textarea {
   resize: none;
+  padding: 15px;
 }
 
 #mensagem {
-  padding: 30px;
-  width: 100%;
+  padding: 20px;
+  width: 95%;
+  margin:0 3%;
   height: 34rem;
   font-size: 25px;
   border-radius: 24px;
@@ -95,11 +98,12 @@ textarea {
 }
 
 .text-input {
+  
   border-radius: 0.5em;
   border: 1px #D8DFE8;
-  display: block;
-  width: 90%;
-  max-width: 98rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
   height: 34rem;
   font-size: 2.5rem;
   font-family: inherit;
@@ -125,10 +129,6 @@ textarea {
   padding-top: 20px;
   justify-content: center;
   gap:2rem;
- 
-
-
-
 }
 
 #btn-cripto,
@@ -166,9 +166,8 @@ textarea {
   color: var(--font-color);
   font-weight: bold;
   background-color: var(--primary-color);
-
   border-radius: 15px;
- padding: 1.6rem 4.8rem;
+  padding: 1.6rem 4.8rem;
   font-size: 1.6rem;
   border: 1px solid var(--font-color);
 
@@ -218,9 +217,11 @@ textarea {
 
 .card1,
 .card2 {
+  width: 40%;
   background-color: white;
   padding: 15px;
-  margin-inline: 10px;
+  margin-inline: 1em;
+  margin-top: 2em;
   font-size: 3rem;
   text-align: center;
   border-radius: 15px;
@@ -234,29 +235,10 @@ textarea {
   font-variant: small-caps;
 }
 
-footer p {
+.rodape-texto  {
   font-size: 1.6rem;
+  text-align: center;
 }
-
-
-
-@media(max-width:560px) {
-  .cards {
-
-    flex-direction: column;
-    margin: 20px;
-  }
-
-  .card1,
-  .card2 {
-    margin: 10px;
-  }
-
-  .rodape-texto p {
-    font-size: 3rem;
-  }
-
-
 
 
   /*********************************
@@ -264,22 +246,6 @@ footer p {
 **********************************/
 
   @media(max-width:560px) {
-    .cards {
-      flex-direction: column;
-      margin: 2rem;
-    }
-
-    .card1,
-    .card2 {
-      margin: 1rem;
-
-    }
-
-
-    .return {
-      margin-top: 45px;
-    }
-
     .main {
       display: grid;
       grid-template-columns: 1fr;
@@ -288,11 +254,37 @@ footer p {
       width: 95%;
     }
 
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    
+      
+    }
+
+    .card1,
+    .card2 {
+      width: 80%;
+    }
+
+
+    .return {
+      margin-top: 45px;
+    }
+
+    #button{
+       max-width: 100%;
+       align-items: center;
+    }
+
     #btn-cripto,
     #btn-descripto {
-      width: 100% !important;
-      padding: 0px !important;
-      margin: 5px 0px !important;
+      font-size: 15px;
+      width: 90%;
+    }
+
+    .rodape-texto  {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 20px;
     }
   }
-}
